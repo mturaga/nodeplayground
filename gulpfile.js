@@ -8,7 +8,7 @@ gulp.task('default',function () {
         env: { 'PORT': 25000},
         watch : ['*.js']
      }; 
-    return nodemon(options).on('restart', function(envs){
+    return nodemon(options).on('restart', function(env){
         console.log('Restarting... ');
     });
 
